@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relCourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+     <!--   <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:src="@drawable/health_pic"
+            android:scaleType="centerCrop"
+            android:id="@+id/course_pic"/>
+-->
+        <hb.xvideoplayer.MxTvPlayerWidget
+            android:id="@+id/mpw_video_player"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/relCourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Health Course"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:id="@+id/courses_name"/>
+
+        <TextView
+            android:layout_below="@+id/courses_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Health Courses are very useful for the people. In this you will get know about Health Care Treatment and many more."
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="italic"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/courses_description"/>
+
+        <View
+            android:layout_below="@+id/courses_description"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/white"
+            android:layout_marginTop="7dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

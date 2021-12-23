@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:background="@android:color/transparent"
+    android:layout_height="fill_parent"
+    tools:context=".Activities.WelcomeActivity">
+
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+      android:src="@drawable/splash_bg"
+      android:scaleType="centerCrop"
+      android:alpha="0.3"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+      android:orientation="vertical">
+
+
+
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="WELCOME"
+          android:textSize="55dp"
+          android:textColor="@color/white"
+          android:id="@+id/txt_welcome"
+          android:gravity="center"
+          android:layout_marginTop="20dp"/>
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/txt_getstarted"
+          android:text="GET STARTED WITH"
+          android:gravity="center"
+          android:textColor="@color/white"
+          android:layout_marginTop="10dp"
+          android:textStyle="italic"
+          android:textSize="20dp"/>
+
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="100dp"
+          android:text="SIGN-IN"
+          android:layout_marginStart="40dp"
+          android:layout_marginEnd="40dp"
+          android:paddingTop="15dp"
+          android:paddingBottom="15dp"
+          android:textSize="18dp"
+          android:id="@+id/btn_signin"
+          android:drawableLeft="@drawable/signin_icon_black"
+          android:textStyle="bold"
+          android:textColor="@color/black"
+          app:backgroundTint="#FFFFFF" />
+
+
+      <Button
+          android:id="@+id/btn_signup"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="40dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginEnd="40dp"
+          android:paddingTop="15dp"
+          android:paddingBottom="15dp"
+          android:drawableLeft="@drawable/person"
+          android:text="SIGN-UP"
+          android:textColor="@color/black"
+          android:textSize="18dp"
+          android:textStyle="bold"
+          app:backgroundTint="@color/white" />
+
+
+
+
+      <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   android:orientation="horizontal"
+   >
+
+   <View
+       android:layout_width="170dp"
+       android:layout_height="2dp"
+      android:background="@color/silver"
+      android:layout_marginTop="50dp"/>
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+      android:textColor="@color/silver"
+      android:text="OR"
+      android:textSize="20dp"
+      android:layout_marginTop="35dp"
+      android:layout_marginStart="20dp"
+      android:layout_marginEnd="20dp"/>
+
+   <View
+       android:layout_width="190dp"
+       android:layout_height="2dp"
+      android:layout_marginTop="50dp"
+      android:background="@color/silver"/>
+
+
+
+</LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+   android:orientation="horizontal">
+
+
+   <ImageButton
+       android:layout_width="45dp"
+       android:id="@+id/login_facebook"
+       android:layout_height="45dp"
+       android:scaleType="centerCrop"
+       android:background="@android:color/transparent"
+       android:layout_marginStart="15dp"
+       android:layout_marginEnd="15dp"
+       android:src="@drawable/facebook"
+ />
+
+   <ImageButton
+       android:layout_width="45dp"
+       android:layout_height="45dp"
+       android:scaleType="centerCrop"
+       android:id="@+id/login_google"
+       android:background="@android:color/transparent"
+       android:layout_marginStart="25dp"
+       android:layout_marginEnd="25dp"
+       android:src="@drawable/google_icon"
+       />
+
+
+
+</LinearLayout>
+      <com.facebook.login.widget.LoginButton
+          android:id="@+id/login_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:clickable="true"
+          android:focusable="true"
+          android:visibility="invisible"
+          android:focusableInTouchMode="true"
+          android:layout_gravity="center_horizontal"
+       />
+
+      <com.google.android.gms.common.SignInButton
+          android:id="@+id/google_login"
+          android:visibility="invisible"
+          android:clickable="true"
+          android:focusableInTouchMode="true"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:id="@+id/header_main"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+<de.hdodenhof.circleimageview.CircleImageView
+    android:layout_width="50dp"
+    android:id="@+id/person_image"
+    app:civ_border_width="2dp"
+    app:civ_border_color="@color/teal_200"
+    android:layout_marginStart="10dp"
+android:layout_gravity="bottom"
+    android:layout_height="50dp"
+    android:layout_marginBottom="15dp"
+    android:src="@drawable/profile"
+    android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Johny Diven"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="12dp"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="15dp" />
+
+
+
+
+
+
+
+
+
+</LinearLayout>

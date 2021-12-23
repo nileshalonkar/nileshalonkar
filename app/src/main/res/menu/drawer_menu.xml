@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single"
+        android:id="@+id/group1">
+
+        <item android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="Home">
+        </item>
+
+        <item android:id="@+id/nav_audio_gallery"
+            android:icon="@drawable/audio_gallery"
+            android:title="Audio Gallery">
+        </item>
+    <!--    <item android:id="@+id/nav_video_gallery"
+            android:icon="@drawable/video_gallery"
+            android:title="Video Gallery">
+        </item>-->
+        <item android:id="@+id/nav_meditation"
+            android:icon="@drawable/meditation"
+            android:title="Meditation Videos">
+        </item>
+
+
+        <item android:id="@+id/nav_courses"
+            android:icon="@drawable/courses"
+            android:title="Mind Development Courses">
+        </item>
+
+        <item android:id="@+id/nav_our_contribution"
+            android:icon="@drawable/money"
+            android:title="Our Contributions">
+        </item>
+
+
+        <item android:id="@+id/nav_become_a_member"
+            android:icon="@drawable/member_icon"
+            android:title="Become a Member">
+        </item>
+
+
+        <item android:id="@+id/nav_mission_k_family"
+            android:icon="@drawable/mission_k_family"
+            android:title="Our Mission K3 Family">
+        </item>
+
+        <item android:id="@+id/nav_notification"
+            android:icon="@drawable/notification"
+            android:title="Notifications">
+        </item>
+
+        <item android:id="@+id/nav_edit_profile"
+            android:icon="@drawable/edit_profile"
+            android:title="Profile">
+        </item>
+
+        <item android:id="@+id/nav_setting"
+            android:icon="@drawable/settings"
+            android:title="Settings">
+        </item>
+
+
+        <item android:id="@+id/nav_about_us"
+            android:icon="@drawable/about_us"
+            android:title="About us">
+        </item>
+
+
+        <item android:id="@+id/nav_log_out"
+            android:icon="@drawable/logout"
+            android:title="Log-Out">
+        </item>
+
+
+
+    </group>
+
+
+
+
+</menu>
+
+
+
+    <!--<group android:checkableBehavior="single"-->
+    <!--android:id="@+id/group2">-->
+    <!--<item android:id="@+id/nav_Policy"-->
+    <!--    android:icon="@drawable/ic_baseline_policy_24"-->
+    <!--    android:title="Privacy Policy">-->
+    <!--</item>-->
+    <!--<item android:id="@+id/nav_share"-->
+    <!--    android:icon="@drawable/ic_baseline_share_24"-->
+    <!--    android:title="Share">-->
+    <!--</item>-->
+    <!--<item android:id="@+id/nav_aboutus"-->
+    <!--    android:icon="@drawable/ic_baseline_people_24"-->
+    <!--    android:title="About Us">-->
+    <!--</item>-->
+
+    <!--<item android:id="@+id/nav_contribution"-->
+    <!--    android:icon="@drawable/ic_baseline_people_24"-->
+    <!--    android:title="Our Contributions">-->
+    <!--</item>-->
+
+    <!--</group>-->

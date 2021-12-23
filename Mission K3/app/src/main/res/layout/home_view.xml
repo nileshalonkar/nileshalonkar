@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/postrelative">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/profile"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:visibility="gone"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/black"
+            android:id="@+id/user_image"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jolly Boy"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:id="@+id/name_user"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:layout_toRightOf="@+id/user_image"
+            android:layout_marginTop="15dp"/>
+
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:src="@drawable/env_three"
+            android:layout_marginTop="2dp"
+            android:layout_margin="10dp"
+            android:id="@+id/user_post"
+            android:scaleType="center"
+            android:layout_below="@+id/name_user"
+
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_post"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/black"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:id="@+id/txtDescription"
+                android:text="Hey Buddy I am joining the new job in Accenture as a junior Backend Developer."/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_hr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_caption"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/like"
+                android:padding="10dp"
+                android:layout_marginStart="5dp"
+                android:id="@+id/like"
+                android:layout_marginLeft="5dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/like_red"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:layout_marginStart="5dp"
+                android:id="@+id/like_red"
+                android:layout_marginLeft="5dp" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/comment"
+                android:id="@+id/comment"
+                android:visibility="gone"
+                android:padding="10dp"
+               />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/share"
+                android:padding="10dp"
+                android:id="@+id/imgShare"
+
+              />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/download"
+                android:padding="10dp"
+                android:id="@+id/imgDownload"/>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/silver"
+            android:layout_below="@+id/ll_hr"
+            android:layout_marginTop="5dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

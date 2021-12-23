@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/video_linear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+ <!-- <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+-->
+
+
+
+   <!-- <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="300dp"/>-->
+   <!-- <com.jarvanmo.exoplayerview.ui.ExoVideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <hb.xvideoplayer.MxTvPlayerWidget
+                android:id="@+id/mpw_video_player"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+           <!-- <hb.xvideoplayer.MxVideoPlayerWidget
+                android:id="@+id/mpw_video_player"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:showBottomProgress="true"
+                />
+-->
+<!--
+            <ImageView
+                android:id="@+id/video_image"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/medi_one" />
+-->
+
+          <!--  <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/play_icon"/>
+                />-->
+            <TextView
+                android:id="@+id/video_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/mpw_video_player"
+                android:text="Sffcgf hgbhug hghohg oluh hh uhu hbuj"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/video_title"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"/>
+        </RelativeLayout>
+
+
+
+
+</LinearLayout>
